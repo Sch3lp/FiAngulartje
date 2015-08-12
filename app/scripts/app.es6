@@ -61,7 +61,13 @@ angular
         url: '/orderComplete',
         templateUrl: 'views/orderComplete.html',
         controller: 'OrderCompleteCtrl'
-      });
+      })
+      .state('placedOrders', {
+        url: '/placedOrders',
+        templateUrl: 'views/placedOrders.html',
+        controller: 'PlacedOrdersCtrl'
+      })
+      ;
   }]);
 
 angular.module('randomizer', []);
